@@ -42,12 +42,9 @@ Quote:
     return summary
 
 def run():
-    summary = build_summary()
+    summary =  print(build_summary())
 
-print(summary)
 
-with open("daily_summer.txt","w",encoding="utf-8") as f:
-    f.write(summary)
 
 print("Pulse ran successfully.")
 
