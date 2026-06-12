@@ -42,7 +42,14 @@ Quote:
     return summary
 
 def run():
-    print(build_summary())
+    summary = build_summary()
+
+print(summary)
+
+with open("daily_summer.txt","w",encoding="utf-8") as f:
+    f.write(summary)
+
+print("Pulse ran successfully.")
 
 if __name__ == "__main__":
     run()
